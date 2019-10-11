@@ -39,7 +39,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 4fr;
   gap: 5px;
-  width: 70%;
+  width: 95%;
   margin: auto;
   max-height: 100vh;
 }
@@ -63,8 +63,12 @@ html {
   width: 100%;
 }
 
-.search h1 {
+.search h3 {
   padding-right: 5px;
+  color: rgb(239, 89, 28);
+  font-size: 2.4rem;
+  font-weight: normal;
+  font-family: calibri;
 }
 
 .search form > input {
@@ -72,27 +76,47 @@ html {
   border-top: 1px black solid;
   border-bottom: 1px black solid;
   border-left: 1px black solid;
-  border-right: none;
+  border-right: 1px black solid;
   background-color: rgb(239, 239, 239);
-  height: 20px;
+  height: 40px;
+  border-radius: 25px;
+  padding-left: 20px;
+  outline: none;
 }
 
-.search button {
-  background-color: rgb(239, 239, 239);
+/* .search button {
+  background-color: transparent;
   border-top: 1px black solid;
   border-bottom: 1px black solid;
   border-left: none;
   border-right: 1px black solid;
-  height: 20px;
-}
+  height: 40px;
+  border-radius: 25px;
+} */
 
 .cta ul {
   list-style: none;
   padding: 0;
+  align-items: center;
+}
+
+.cta ul a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 .cta li {
   padding: 10px;
+}
+
+.cta ul li:nth-child(3n) {
+  border: 0.5px solid black;
+  height: 39px;
+}
+
+.cta ul li:nth-child(5n) {
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
 
 .cta-items {
@@ -117,6 +141,7 @@ html {
   align-items: flex-start;
   justify-content: space-between;
   padding: 0;
+  font-size: 0.85rem;
 }
 
 .nav-bar {
@@ -130,12 +155,51 @@ html {
 
 /* -------------------------- Nav Bar ------------------------ */
 
+/* -------------------------- Tags ------------------------ */
+
+.tags {
+  grid-column: span 2;
+}
+
+.tags ul {
+  list-style: none;
+  padding: 0;
+}
+
+.text-bubbles a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background: rgb(249, 149, 108);
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.text-bubbles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+/* -------------------------- Tags ------------------------ */
+
 /* -------------------------- Aside Nav ------------------------ */
 
 .nav {
-  background-color: yellow;
   height: auto;
-  color: pink;
+  font-size: 0.85rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.links dd {
+  margin-bottom: 2px;
 }
 
 /* -------------------------- Aside Nav ------------------------ */
@@ -151,8 +215,8 @@ main {
   width: 100%;
 }
 .products img {
-  height: auto;
-  width: auto;
+  height: 150px;
+  width: 150px;
 }
 
 .products ul {

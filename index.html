@@ -12,40 +12,80 @@
     />
   </head>
   <body>
-    <article class="container">
-      <header class="head">
-        <div class="search">
-          <h1>Etsy</h1>
-          <form>
-            <input type="text" id="search_bar" name="search_bar" size="80" />
-          </form>
-          <button type="submit" method="get">
-            <i class="fa fa-search"></i>
-          </button>
-        </div>
-        <div class="cta">
-          <ul class="cta-items">
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-          </ul>
-        </div>
-      </header>
-      <aside class="nav-bar">
-        <ul>
-          <li><a href="#">link 1</a></li>
-          <li><a href="#">link 2</a></li>
-          <li><a href="#">link 3</a></li>
-          <li><a href="#">link 4</a></li>
-          <li><a href="#">link 5</a></li>
-          <li><a href="#">link 6</a></li>
-          <li><a href="#">link 7</a></li>
-          <li><a href="#">link 8</a></li>
-          <li><a href="#">link 9</a></li>
+    <header class="head">
+      <div class="search">
+        <h3>Etsy</h3>
+        <form>
+          <input type="text" id="search_bar" name="search_bar" size="100" />
+        </form>
+        <!-- <button type="submit" method="get">
+              <i class="fa fa-search"></i>
+            </button> -->
+      </div>
+      <div class="cta">
+        <ul class="cta-items">
+          <li><a href="#">Sell&nbsp;on&nbsp;Etsy</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Sign&nbsp;in</a></li>
+          <li><i class="fa fa-ellipsis-v"></i></li>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/cart.png"
+                style="height: 20px; width: auto; "
+              />
+              Cart
+            </a>
+          </li>
         </ul>
+      </div>
+    </header>
+    <aside class="nav-bar">
+      <ul>
+        <li><a href="#">Jewelry&nbsp;&&nbsp;Accessories</a></li>
+        <li><a href="#">Clothing&nbsp;&&nbsp;Shoes</a></li>
+        <li><a href="#">Home&nbsp;&&nbsp;Living</a></li>
+        <li><a href="#">Wedding&nbsp;&&nbsp;Party</a></li>
+        <li><a href="#">Toys&nbsp;&&nbsp;Entertainment</a></li>
+        <li><a href="#">Art&nbsp;&&nbsp;Collectibles</a></li>
+        <li><a href="#">Craft&nbsp;Supplies</a></li>
+        <li><a href="#">Vintage</a></li>
+        <li>
+          <a href="#"><i class="fa fa-gift">&nbsp;</i>Gifts</a>
+        </li>
+      </ul>
+      <hr />
+    </aside>
+    <article class="container">
+      <div class="tags">
+        <ul class="text-bubbles">
+          <li><a href="#">whiskey&nbsp;decanter</a></li>
+          <li><a href="#">whiskey&nbsp;stones</a></li>
+          <li><a href="#">whiskey&nbsp;glasses</a></li>
+          <li><a href="#">whiskey&nbsp;barrel</a></li>
+          <li><a href="#">bourbon</a></li>
+          <li><a href="#">scotch</a></li>
+          <li><a href="#">whiskey&nbsp;gift</a></li>
+          <li><a href="#">whiskey&nbsp;sign</a></li>
+          <li><a href="#">whiskey&nbsp;svg</a></li>
+          <li><a href="#">beer</a></li>
+        </ul>
+      </div>
+
+      <aside class="nav">
+        <dl class="links">
+          <dt><a href="#">All&nbsp;categories</a></dt>
+          <br />
+          <dd><a href="#">Home&nbsp;&&nbsp;Living</a></dd>
+          <dd><a href="#">Weddings</a></dd>
+          <dd><a href="#">Clothing</a></dd>
+          <br />
+          <dd>
+            <strong><a href="#">Show&nbsp;More</a></strong>
+          </dd>
+        </dl>
       </aside>
-      <aside class="nav">Nav Links</aside>
+
       <main class="gallery">
         <section class="products">
           <img src="https://via.placeholder.com/300/300" />
@@ -131,8 +171,9 @@
           </ul>
         </section>
       </main>
-      <footer class="footer">Footer</footer>
     </article>
+    <hr />
+    <footer class="footer">Footer</footer>
     <script src="./main.js"></script>
     <script src="./items.js"></script>
   </body>
