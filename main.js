@@ -15,25 +15,29 @@ const title = items.results.map(item => item.title).join("\n\n")
 
 const price = items.results.map(item => item.price).join("")
 
-const images = items.results.map(item => item.Images)
+const images = items.results.map(item => item.Images).join("")
 
-const pics = items.results
-  .map(item => item.Images[0])
-  .map(item => item.url_170x135)
+// const pics = items.results
+//   .map(item => item.Images[0])
+//   .map(item => item.url_570xN)
+
+const pics = items.results.map(item => item.Images[0].url_570xN)
 
 const html = items.results
   .map(item => {
     return `
   <section class="products">
-  <img src="" />
+  <img src="${item.Images[0].url_570xN}" />
   <ul>
     <li>
       <h3>${item.title}</h3>
     </li>
-    <li>Company</li>
+    <li>${item.Shop.shop_name}</li>
     <li>Ratings</li>
     <li>${item.price}</li>
   </ul>
   </section>`
   })
   .join("")
+
+document.querySelector(".gallery").innerHTML = html

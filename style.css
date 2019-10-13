@@ -235,12 +235,17 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
-  height: 400px;
+  /* height: 400px; */
   width: 100%;
 }
+
+.gallery {
+  display: grid;
+}
+
 .products img {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
 
 .products ul {
@@ -250,8 +255,10 @@ main {
 }
 .products h3 {
   margin: 0;
-  text-overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
+  width: 200px;
 }
 
 .products {
@@ -261,11 +268,13 @@ main {
   align-items: center;
   padding: 2px;
   width: 10%;
+  text-overflow: ellipsis;
 }
+
 /* -------------------------- Gallery ------------------------ */
 
 .footer {
   height: auto;
   grid-column: span 2;
-  margin-top: 40%;
+  margin-top: 1500px;
 }
