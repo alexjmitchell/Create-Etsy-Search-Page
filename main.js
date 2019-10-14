@@ -35,8 +35,8 @@ const html = items.results
       <h3>${item.title}</h3>
     </li>
     <li>${item.Shop.shop_name}</li>
-    <li>Ratings</li>
-    <li>${item.price}</li>
+    <li>Rating: 5/5</li>
+    <li>$${item.price}</li>
   </ul>
   </section>`
   })
