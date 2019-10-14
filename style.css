@@ -243,9 +243,14 @@ main {
   display: grid;
 }
 
-.products img {
+.products .product-img {
   height: 200px;
   width: 200px;
+}
+
+.products .images {
+  background-image: url("./assets/heart.png");
+  background-size: 100px 100px;
 }
 
 .products ul {
@@ -277,4 +282,30 @@ main {
   height: auto;
   grid-column: span 2;
   margin-top: 1500px;
+}
+
+.footer .footer-1 {
+  height: 200px;
+  background-color: rgb(215, 230, 244);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-1 input {
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  padding-left: 25px;
+}
+
+.footer .footer-1 input::placeholder {
+  /* padding-left: 25px; */
+  color: #999;
+}
+
+.footer .footer-2 {
+  height: 400px;
+  background-color: rgb(48, 71, 107);
 }

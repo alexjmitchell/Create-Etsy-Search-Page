@@ -274,6 +274,83 @@
             </dl>
           </li>
         </ul>
+
+        <ul class="links">
+          <li>
+            <strong><a href="#">Price(&dollar;)</a></strong>
+          </li>
+          <br />
+          <li>
+            <button type="radio"></button>
+            <a href="#">&nbsp;Under&nbsp;&dollar;25</a>
+          </li>
+          <li>
+            <button type="radio"></button>
+            <a href="#">&nbsp;&dollar;25&nbsp;to&nbsp;&dollar;75</a>
+          </li>
+          <li>
+            <button type="radio"></button>
+            <a href="#">&nbsp;&dollar;75&nbsp;to&nbsp;&dollar;100</a>
+          </li>
+          <li>
+              <button type="radio"></button>
+              <a href="#">&nbsp;Over&nbsp;&dollar;100</a>
+            </li>
+            <li>
+              <dl>
+                <dt><button type="radio"></button>&nbsp;&nbsp;Custom</dt>
+                <br />
+                <dd>
+                  <form>
+                    <input
+                      type="text"
+                      name="low"
+                      id="low"
+                      placeholder="Low"
+                      size="6"
+                    />&nbsp;to&nbsp;<input
+                    type="text"
+                    name="high"
+                    id="high"
+                    placeholder="High"
+                    size="6"
+                  />
+                  </form>
+                </dd>
+              </dl>
+            </li>
+        </ul>
+
+        <ul class="links">
+          <li>
+              <strong><a href="#">Ordering&nbsp;options</a></strong>
+          </li>
+          <br />
+          <li>
+            <button type="radio"></button>
+            <a href="#">&nbsp;Accepts&nbsp;Etsy&nbsp;gift&nbsp;cards</a>
+          </li>
+          <li>
+            <button type="radio"></button>
+            <a href="#">&nbsp;Can&nbsp;be&nbsp;gift-wrapped</a>
+          </li>
+        </ul>
+
+        <ul class="links">
+          <li>
+            <strong><a href="#">Ship&nbsp;to</a></strong>
+          </li>
+          <br />
+          <li>
+            <form>
+              <select style="width: 150px; height: 30px; outline: none; background-color: white;">
+                <option>United&nbsp;States</option>
+                <option>Afghanistan</option>
+                <option>United&nbsp;Kingdom</option>
+              </select>
+            </form>
+          </li>
+        </ul>
       </aside>
 
       <main class="gallery"></main>
@@ -281,8 +358,14 @@
     <footer class="footer">
       <hr />
       <br />
-
-      Footer
+      <div class="footer-1">
+        <p>Get fresh Etsy trends and unique ideas delivered right to your inbox.</p>
+        <form>
+          <label for="email_address"></label>
+          <input type="email" name="email_address" id="email_address" size="100" placeholder="Enter your Email"/>
+        </form>
+      </div>
+      <div class="footer-2"></div>
     </footer>
     <script src="./items.js"></script>
     <script src="./main.js"></script>

@@ -27,7 +27,9 @@ const html = items.results
   .map(item => {
     return `
   <section class="products">
-  <img src="${item.Images[0].url_570xN}" />
+  <div class="images">
+    <img src="${item.Images[0].url_570xN}" class="product-img" />
+  </div>
   <ul>
     <li>
       <h3>${item.title}</h3>
