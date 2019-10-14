@@ -248,11 +248,6 @@ main {
   width: 200px;
 }
 
-.products .images {
-  background-image: url("./assets/heart.png");
-  background-size: 100px 100px;
-}
-
 .products ul {
   list-style: none;
   padding: 0;
@@ -274,6 +269,22 @@ main {
   padding: 2px;
   width: 10%;
   text-overflow: ellipsis;
+  position: relative;
+}
+
+.products .heart {
+  display: none;
+  background: url("./assets/heart.png");
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 10px;
+  left: 160px;
+  transition: 4s ease-in-out;
+}
+
+.products:hover .heart {
+  display: block;
 }
 
 /* -------------------------- Gallery ------------------------ */

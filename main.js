@@ -28,6 +28,7 @@ const html = items.results
     return `
   <section class="products">
   <div class="images">
+    <div class="heart"></div>
     <a href="#" ><img src="${item.Images[0].url_570xN}" class="product-img" /></a>
   </div>
   <ul>
